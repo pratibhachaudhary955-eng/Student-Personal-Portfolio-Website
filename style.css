@@ -1,0 +1,557 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+  /* Navbar */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+  }
+  .logo {
+    color: #ff4d4d;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff4d4d;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    padding: 0 60px;
+  }
+  
+  /* Left Image */
+  .image-container {
+    width: 180px;        /* fixed width */
+    margin: 20px auto;   /* center */
+}
+
+.image-container img {
+    width: 100%;         /* image fits container */
+    height: auto;
+    border-radius: 10px;
+}
+  /* Right Content */
+  .right h1 span {
+    color: #ff4d4d;
+  }
+  
+  .right h2 {
+    margin: 10px 0;
+  }
+  
+  .right p {
+    margin: 15px 0;
+    max-width: 400px;
+  }
+  .social-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+    bac /* Optional background */
+  }
+  .social-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #333; /* Default neutral color */
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effects with Brand Colors */
+  .social-icon.facebook:hover svg {
+    fill: #1877F2;
+    transform: translateY(-3px);
+  }
+  
+  .social-icon.instagram:hover svg {
+    fill: #E4405F;
+    transform: translateY(-3px);
+  }
+  
+  .social-icon.x-twitter:hover svg {
+    fill: #000000;
+    transform: translateY(-3px);
+  }
+  
+  /* Ensure links don't have underlines */
+  .social-icon {
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* 🔥 MEDIA QUERY (Responsive Design) */
+  @media (max-width: 768px) {
+  
+    header {
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left img {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+  
+    .right p {
+      max-width: 100%;
+    }
+  }
+
+  /* General Styles */
+body {
+    background-color:black;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Image Styling */
+.about-image {
+    flex: 1;
+}
+
+.p.profile-img {
+    width: 350px; /* Increase this to your preferred width */
+    height: auto; /* This automatically scales the height so it doesn't stretch */
+    border-radius: 10px;
+}
+/* Image Styling */
+.about-image {
+  flex: 1;
+}
+.about-image img {
+  max-height: 80vh; /* Screen height ka 80% se zyada bada nahi hoga */
+  width: 100%;
+  height: auto;
+}
+/* Text Styling */
+.about-text {
+  flex: 1;
+}
+.title {
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+/* The coral underline effect */
+.title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50%;
+    height: 3px;
+    background-color: #c45d52;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Button Styling */
+.btn-download {
+    display: inline-block;
+    background-color: lightcoral;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: #a34a41;
+}
+
+/* --- Media Queries --- */
+
+/* For Tablets and smaller screens */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column; /* Stacks image on top of text */
+        text-align: center;
+    }
+
+    .title::after {
+        left: 25%; /* Centers the underline if text is centered */
+    }
+
+    .about-image img {
+        margin: 0 auto;
+    }
+}
+
+/* For Mobile Phones */
+@media (max-width: 480px) {
+    .container {
+        padding: 40px 15px;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
+/* General Base Styles */
+body {
+    background:black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Header Styling */
+.main-title {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #c45d52; /* Coral accent */
+}
+
+/* Layout Wrapper */
+.skills-wrapper {
+
+    justify-content: space-between;
+    gap: 100px;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+
+body {
+  color: white;
+}
+
+/* Section */
+.skills {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.skills h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background: #00c6a7;
+  margin: 10px auto 40px;
+}
+
+/* Container */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Skill Box */
+.skill-box {
+  max-width: 250px;
+}
+
+.skill-box img {
+  width: 60px;
+  margin-bottom: 15px;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.skill-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.skill-box p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .skill-box {
+      margin-bottom: 30px;
+  }
+}
+
+/* Section */
+.projects {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.projects h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Cards */
+.card {
+  background: #111827;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+  text-align: center;
+  padding: 50px 20px;
+    color: white;
+    margin-bottom: 30px;
+    border-bottom: 2px solid brown;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+form {
+    width: 40%;
+    margin: auto;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    background: #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: blue;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* Base Styles */
+body {
+  margin: 0;
+  font-family:sans-serif;
+}
+
+.footer-container {
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+/* Typography */
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* List Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+li i {
+  width: 25px; /* Keeps icons aligned vertically */
+  font-size: 1.1rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column; /* Stacks columns on mobile */
+      text-align: left;
+  }
+  
+  .footer-column {
+      margin-bottom: 20px;
+  }
+}
+
+
+
