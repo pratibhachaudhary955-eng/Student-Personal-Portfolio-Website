@@ -24,6 +24,10 @@ A modern and responsive Student Portfolio Website built using HTML, CSS, and Jav
 
 Portfolio Website: [https://pratibhachaudhary955-eng.github.io/Student-Personal-Portfolio-Website/]
 
+## Screenshot:
+<img width="720" height="864" alt="WhatsApp Image 2026-09-02 at 9 06 58 PM" src="https://github.com/user-attachments/assets/99876bd2-6e4a-4a4f-8409-62dd978f041c" />
+
+
 ## 📂 GitHub Repository
 
 GitHub: [https://github.com/pratibhachaudhary955-eng]
