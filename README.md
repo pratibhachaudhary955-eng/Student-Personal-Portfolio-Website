@@ -1,28 +1,42 @@
-# 👩‍💻 Personal Portfolio Website
+# 🌐 Student Portfolio Website
 
-Hi, I'm Pratibha Chaudhary - A passionate Web Developer!
+A modern and responsive Student Portfolio Website built using HTML, CSS, and JavaScript to showcase my education, technical skills, projects, certifications, and contact information. This project highlights my web development skills and serves as my professional online portfolio.
 
-## 🌐 Live Link
-[https://pratibhachaudhary955-eng.github.io/Student-Personal-Portfolio-Website/]
+## 🚀 Features
 
-## 📖 About
-My personal portfolio to showcase my journey, skills, and projects.
+* Responsive Design
+* Professional User Interface
+* About Me Section
+* Skills Showcase
+* Projects Portfolio
+* Resume Download
+* Contact Form
+* Mobile-Friendly Layout
 
-## 🛠️ Tech Stack
-- HTML5, CSS3, JavaScript
-- Responsive Design
-- Git & GitHub
+## 🛠️ Technologies Used
 
-## ✨ Features
-- Clean & Modern UI
-- About Me, Projects, Resume Section
-- Contact Form
-- Mobile Responsive
+* HTML5
+* CSS3
+* JavaScript
+* Git & GitHub
 
-## 📸 Screenshots
-<img width="720" height="864" alt="WhatsApp Image 2026-09-02 at 9 06 58 PM" src="https://github.com/user-attachments/assets/1b50e733-d5d2-4cd1-bd8f-a5f38d0901f9" />
+## 🔗 Live Demo
 
+Portfolio Website: [https://pratibhachaudhary955-eng.github.io/Student-Personal-Portfolio-Website/]
 
-## 📫 Connect With Me
-- LinkedIn: [https://www.linkedin.com/in/pratibha-chaudhary-395a25324]
-- GitHub: https://github.com/pratibhachaudhary955-eng
+## 📂 GitHub Repository
+
+GitHub: [https://github.com/pratibhachaudhary955-eng]
+
+## 👩‍💻 About Me
+
+I am Pratibha Chaudhary, a final-year BCA student passionate about Full Stack Web Development. I enjoy building responsive web applications and continuously improving my problem-solving and programming skills.
+
+## 📬 Connect With Me
+
+LinkedIn: [https://www.linkedin.com/in/pratibha-chaudhary-395a25324]
+
+GitHub: [https://github.com/pratibhachaudhary955-eng]
+Email: pratibhachaudhary955@gmail.com
+
+⭐ If you like this project, please give it a star on GitHub.
